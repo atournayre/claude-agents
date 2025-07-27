@@ -1,0 +1,24 @@
+# Composer
+/vendor/
+composer.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Cache
+.cache/
+tmp/
+
+# Test artifacts
+.phpunit.result.cache
+coverage/

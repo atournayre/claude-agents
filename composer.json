@@ -1,0 +1,80 @@
+{
+    "name": "atournayre/claude-agents",
+    "description": "A comprehensive collection of specialized Claude Code agents for modern PHP development",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "claude-code",
+        "ai-agents",
+        "php",
+        "symfony",
+        "ddd",
+        "phpstan",
+        "code-quality",
+        "architecture"
+    ],
+    "authors": [
+        {
+            "name": "Aurélien Tournayre",
+            "email": "aurelien.tournayre@protonmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@install-agents"
+        ],
+        "post-update-cmd": [
+            "@install-agents"
+        ],
+        "pre-uninstall-cmd": [
+            "@uninstall-agents"
+        ],
+        "install-agents": [
+            "php scripts/install-agents.php"
+        ],
+        "uninstall-agents": [
+            "php scripts/uninstall-agents.php"
+        ]
+    },
+    "extra": {
+        "claude-agents": {
+            "install-path": ".claude/agents",
+            "agents": [
+                "agents/php/php-standards-enforcer.md",
+                "agents/php/phpstan-error-resolver.md", 
+                "agents/php/quality-assurance-enforcer.md",
+                "agents/symfony/symfony-6-4-optimizer.md",
+                "agents/symfony/symfony-migration-specialist.md",
+                "agents/ddd/ddd-architect.md",
+                "agents/ddd/entity-creator-specialist.md",
+                "agents/ddd/value-object-designer.md",
+                "agents/ddd/exception-hierarchy-designer.md",
+                "agents/messaging/message-messagehandler-architect.md",
+                "agents/collections/collection-specialist.md",
+                "agents/testing/testing-specialist.md",
+                "agents/architecture/dependency-injection-architect.md",
+                "agents/architecture/elegant-objects-enforcer.md",
+                "agents/framework/atournayre-framework-specialist.md"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Atournayre\\ClaudeAgents\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "*": true
+        }
+    }
+}
