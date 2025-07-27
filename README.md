@@ -1,4 +1,4 @@
-# Claude Agents Collection by Atournayre
+# Claude Agents Collection
 
 A comprehensive collection of specialized Claude Code agents for modern PHP development, covering architecture patterns, frameworks, testing, and code quality.
 
@@ -8,15 +8,8 @@ This package provides reusable Claude Code agents that can be used across multip
 
 ## 📦 Installation
 
-### Option 1: Manual Installation (Temporary)
 ```bash
-# Clone or copy the agents directory to your project
-cp -r atournayre-claude-agents/agents/* .claude/agents/
-```
-
-### Option 2: Composer Package (Future)
-```bash
-composer require atournayre/claude-agents
+composer require --dev atournayre/claude-agents
 ```
 
 ## 🔧 Available Agents

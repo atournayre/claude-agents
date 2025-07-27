@@ -80,7 +80,7 @@ When creating tests:
 
 **Test Template Standards:**
 - Use `declare(strict_types=1)` in all test files
-- Follow project namespace conventions: `Neo\Tests\unit`
+- Follow project namespace conventions: `App\Tests\unit`
 - Extend `PHPUnit\Framework\TestCase` for all test classes
 - Apply descriptive test class names: `UserServiceTest`, `ContratCalculationTest`
 
