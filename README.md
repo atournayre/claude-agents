@@ -68,6 +68,9 @@ Static analysis, code style, testing, and quality assurance automation.
 ### 🟣 Domain Modeling
 DDD patterns, entity design, value objects, and business logic encapsulation.
 
+### 🟠 Messaging & Architecture
+CQRS patterns, Symfony Messenger, dependency injection, and messaging architecture.
+
 ## 🔄 Integration Workflow
 
 1. **Project Setup**: Copy relevant agents to `.claude/agents/` directory
@@ -146,14 +149,6 @@ Each agent includes:
 ## 📄 License
 
 MIT License - See [LICENSE](LICENSE) file for details.
-
-## 🏗️ Roadmap
-
-- [ ] Composer package distribution
-- [ ] Auto-installation scripts
-- [ ] IDE integration guides
-- [ ] Extended framework support
-- [ ] Community agent contributions
 
 ---
 
