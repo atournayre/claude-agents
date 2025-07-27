@@ -19,7 +19,11 @@ class AgentUninstaller
     public function __construct()
     {
         $this->vendorDir = dirname(__DIR__);
-        $this->projectRoot = dirname($this->vendorDir, 2);
+        
+        // When installed via Composer, the structure is:
+        // project/vendor/atournayre/claude-agents/scripts/uninstall-agents.php
+        // So we need to go up 4 levels: scripts -> claude-agents -> atournayre -> vendor -> project
+        $this->projectRoot = dirname($this->vendorDir, 3);
         $this->targetDir = $this->projectRoot . '/.claude/agents';
         
         // Load composer.json config
